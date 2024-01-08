@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main">
+			<nav class="nav">
+				<a class="nav__btn nav__btn-add" href="">Добавить</a>
+				<a class="nav__btn nav__btn-del" href="">Удалить</a>
+			</nav>
+		</div>
+
+		<div class="popup">
+			<div class="popup__add">
+				<p class="add__close">Закрыть</p>
+				<h2 class="add__title">Добавление позиции</h2>
+				<form class="add-form" action="#" method="GET">
+					<label for="author-add">Автор:</label>
+					<input id="author-add" class="data-add" type="text" />
+					<label for="title-add">Название:</label>
+					<input id="title-add" class="data-add" type="text" />
+					<label for="description-add">Описание:</label>
+					<input id="description-add" class="data-add" type="text" />
+					<label for="path-add">Путь к картине:</label>
+					<input id="path-add" class="data-add" type="text" />
+					<label for="price-add">Цена:</label>
+					<input id="price-add" class="data-add" type="number" />
+                    <label for="price-add">Количество:</label>
+					<input id="quantity-add" class="data-add" type="number" />
+                    <label for="code-add">Код:</label>
+                    <input id="code-add" class="data-add" type="text" />
+                    <input class="add__btn" type="submit">
+				</form>
+			</div>
+			<div class="popup__del"></div>
+		</div>
+
+		<script src="./js/main.js" type="text/javascript"></script>
+	</body>
+</html>
