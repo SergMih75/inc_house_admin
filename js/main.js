@@ -9,11 +9,13 @@ const baseUrl =
 let newItem = {}
 
 document.addEventListener('DOMContentLoaded', () => {
+
 	getQuestion()
-	// datasetCreation()
 })
+
 navBtn.forEach(item => {
 	item.addEventListener('click', function (e) {
+
 		e.preventDefault()
 		popup.classList.add('popup-active')
 		if (item.classList.contains('nav__btn-add')) {
@@ -26,6 +28,7 @@ navBtn.forEach(item => {
 })
 
 popup.addEventListener('click', e => {
+
 	if (
 		e.target.classList.contains('add__close') ||
 		e.target.classList.contains('del__close')
@@ -33,11 +36,12 @@ popup.addEventListener('click', e => {
 		document.querySelector('.popup__add').classList.remove('popup__add-active')
 		document.querySelector('.popup__del').classList.remove('popup__del-active')
 		popup.classList.remove('popup-active')
+		getQuestion()
 	}
 })
 
 addBtn.addEventListener('click', function () {
-	getQuestion()
+
 	newItem = {
 		pic_author: document.getElementById('author-add').value,
 		pic_title: document.getElementById('title-add').value,
@@ -50,5 +54,6 @@ addBtn.addEventListener('click', function () {
 	postQuestions(newItem)
 	dataAdd.forEach(dataAdd => {
 		dataAdd.value = ''
+		getQuestion()
 	})
 })

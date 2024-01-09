@@ -27,26 +27,3 @@ body {
 
 	background-color: rgba(236, 223, 205, 0.863);
 }
-
-.dataset__table {
-    width: 95%;
-    margin-top: 20px;
-
-    font-size: 16px;
-    text-align: center;
-
-    border: 1px solid #63b7ddb7;
-    border-collapse: collapse;
-}
-
-.dataset__table th {
-	font-size: 20px;
-	font-weight: 600;
-	text-transform: uppercase;
-    border: 1px solid #63b7ddb7;
-}
-
-.dataset__table th,
-.dataset__table td {
-	padding: 8px;
-}
